@@ -1,0 +1,297 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #e5eaf5;
+    display: block;
+    height: auto;
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.5;
+    font-size: 0.875rem;
+}
+
+/* hero */
+header {
+    min-height: 100vh;
+    background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
+      url(./homeHero.jpg) center/cover no-repeat;
+}
+
+.banner {
+    min-height: 100vh;
+    display: flex;
+    place-items: center;
+    place-content: center;
+    text-align: center;
+}
+
+.banner .container {
+    display: block;
+    color: white;
+    text-align: center;
+}
+
+.banner .container h1 {
+    text-transform: capitalize;
+    margin: 10px 0;
+    font-size: 1.5rem;
+    font-family: "Roboto", sans-serif;
+}
+
+.banner .container p {
+    max-width: 25rem;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.btn-orange {
+    margin-top: 40px;
+    color: white;
+    padding: 10px 15px;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2rem;
+    transition: all 1s linear;
+    border-radius: 4px;
+    background-color: #D16002;
+}
+
+.btn-orange:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #D16002;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+/* About, services, and projects */
+#about, #projects, #services {
+    height: 100vh;
+}
+
+#about .title, #projects .title, #services .title {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #494d5f;
+    letter-spacing: 5px;
+}
+
+.title span {
+    color: #a0d2eb;
+}
+
+/* Back to top button */
+.top-link {
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    color: #494d5f;
+    background-color: #a0d2eb;
+    font-size: 1.5rem;
+    padding: 8px 10px;
+    border-radius: 10px;
+    display: grid;
+    animation: bounce 2s ease-in-out infinite;
+    visibility: hidden;
+    z-index: -100;
+}
+
+.show-link {
+    visibility: visible;
+    z-index: 100;
+}
+
+@keyframes bounce {
+    0% {
+      transform: scale(1.2);
+    }
+    50% {
+      transform: scale(0.8);
+    }
+    100% {
+      transform: scale(1.2);
+    }
+  }
+
+/* footer */
+footer {
+    background-color: #494d5f;
+    height: 40vh;
+    text-align: center;
+    display: flex;
+    place-items: center;
+    justify-content: center;
+}
+
+footer p {
+    letter-spacing: 3px;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.08rem;
+    text-transform: capitalize;
+}
+
+/* Nav Styling Beginning */
+@media screen and (min-width: 800px) {
+    .links-container {
+        height: auto !important;
+    }
+}
+
+.nav-center {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: #D16002;
+    text-transform: capitalize;
+    margin: 0;
+    /* max-height: 40px; */
+    font-family: "Great Vibes", cursive;
+    font-size: 45px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #d9edf7;
+}
+
+.links {
+    display: flex;
+    margin: 0 0.5rem;
+}
+
+.links a {
+    margin: 0 1em;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.links .btn-orange {
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.nav-header {
+    padding: 15px 30px;
+}
+
+.show-links {
+    height: auto;
+}
+
+
+@media screen and (max-width: 800px) {
+    .nav-center {
+        display: block;
+        background-color: #ffff;
+    }
+
+    .nav-header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .links {
+        margin: 0;
+        padding: 0;
+        display: block;
+        overflow: hidden;
+        transition: all 0.3s linear;
+        background-color: #a0d2eb;
+        box-shadow: 0px 3px 3px 0 #494d5f;
+    }
+
+    .links-container {
+        height: 0;
+        overflow: hidden;
+        transition: all 0.3s linear;
+    }
+
+    .nav-toggle {
+        transition: all 0.3s linear;
+        display: flex;
+        background-color: transparent;
+        border-color: transparent;
+        color: #D16002;
+        height: auto !important;
+    }
+
+    .fas {
+        font-size: 30px;
+        height: auto !important;
+    }
+
+    .nav-toggle:hover {
+        transform: rotate(90deg);
+        color: #e5eaf5;
+        cursor: pointer;
+    }
+
+    .show-links{
+        height: 17rem;
+        transition: all 0.3s linear;
+    }
+
+    .links a {
+        display: block;
+        transition: all 0.3s linear;
+        padding: 1rem 0;
+        color: #494d5f;
+        text-transform: capitalize;
+        font-weight: 600;
+        font-size: 23px;
+    }
+
+    .links li:hover {
+        cursor: pointer;
+        background-color: #e5eaf5;
+        color: #a0d2eb;
+        letter-spacing: 4px;
+    }
+
+    .links a:hover {
+        width: 100%;
+        color: #a0d2eb;
+    }
+}
+
+.fixed-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #e5eaf5;
+    box-shadow: 0px 3px 3px 0 #494d5f;;
+}
+
+.fixed-nav a {
+    color: #494d5f;
+}
+/* End of Nav Styling 13-141 */
+
