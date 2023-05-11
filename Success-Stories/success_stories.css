@@ -127,6 +127,7 @@ body {
     transform: scale(1.1);
     transition: transform 0.3s ease-in-out;
     filter: blur(1px) brightness(80%);
+
 }
 
 
