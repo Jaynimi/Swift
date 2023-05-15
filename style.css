@@ -64,6 +64,7 @@ header {
     transition: all 0.4s linear;
     border-radius: 4px;
     background-color: #D16002;
+    text-transform: capitalize;
 }
 
 .btn-orange:hover {
@@ -72,24 +73,6 @@ header {
     color: #D16002;
     letter-spacing: 1px;
     font-weight: 600;
-}
-
-/* About, services, and projects */
-#about, #projects, #services {
-    height: 100vh;
-}
-
-#about .title, #projects .title, #services .title {
-    text-align: center;
-    font-family: "Roboto", sans-serif;
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    color: #34443C;
-    letter-spacing: 5px;
-}
-
-.title span {
-    color: #a0d2eb;
 }
 
 /* Back to top button */
@@ -578,3 +561,39 @@ a {
         font-size: 1rem;
     }
 }
+
+/* About Us Section */
+#about-us {
+    margin-bottom: 140px;
+    text-align: center;
+}
+
+.about-header {
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-bottom: 45px;
+    font-family: "Roboto", sans-serif;
+    color: #34443C;
+}
+
+.about-text {
+    text-align: left;
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+}
+
+.about-btn {
+    margin-top: 70px;
+}
+
+.about-btn .btn-orange {
+    padding: 10px 20%;
+    border-radius: 30px;
+}
+
+.about-container .btn-orange:hover {
+    border: 2px solid #D16002;
+    color: #D16002;
+    background-color: #4bd1a025;
+}
+
