@@ -108,22 +108,6 @@ header {
     }
   }
 
-/* footer */
-footer {
-    background-color: #34443C;
-    height: 40vh;
-    text-align: center;
-    display: flex;
-    place-items: center;
-    justify-content: center;
-}
-
-footer p {
-    letter-spacing: 3px;
-    font-family: "Roboto", sans-serif;
-    font-size: 1.08rem;
-    text-transform: capitalize;
-}
 
 /* Nav Styling Beginning */
 @media screen and (min-width: 800px) {
@@ -597,3 +581,159 @@ a {
     background-color: #4bd1a025;
 }
 
+/* footer */
+/* footer {
+    background-color: #34443C;
+    height: 40vh;
+    text-align: center;
+    display: flex;
+    place-items: center;
+    justify-content: center;
+}
+
+footer p {
+    letter-spacing: 3px;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.08rem;
+    text-transform: capitalize;
+} */
+
+/* Footer */
+footer {
+    /* padding: auto 5%; */
+}
+
+/* Get In Touch Section */
+.mail {
+    background-color: #C8E5DE;
+    height: 15vh;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    
+}
+
+.mail-container{
+    margin: auto 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.mail-container h2 {
+    text-transform: uppercase;
+    color: #34443C;
+    font-family: "Roboto", sans-serif;
+}
+
+.mail form {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    
+    
+}
+
+#message-input {
+    height: 35px;
+    resize: none;
+    width: 100%;
+    border: transparent;
+    background-color: #eaf0ee;
+    padding: 10px;
+}
+
+.send-message {
+    border: transparent;
+    background-color: #34443C;
+    padding: 0 10px;
+    color: white;
+}
+
+/* Real Footer */
+.footer-container {
+    background-color: #34443C;
+}
+.key-title {
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.6rem;
+    padding-top: 25px;
+}
+
+.footer-box {
+    background-color: #4BD1A0;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 8px;
+    width: 30%;
+    text-align: center;
+    color: white;
+}
+
+.boxes-row1 {
+    display: flex;
+    flex-direction: row;
+    place-content: center;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.boxes-row1 .footer-box:nth-child(1) {
+    background-color: black;
+}
+
+.footer-box .fa-user-circle {
+    color:  #4BD1A0;
+}
+
+.footer-box .fa-dollar-sign, .box-row2 .fa-volume-up {
+    color: black;
+}
+
+.boxes-row1 .footer-box:nth-child(2) {
+    background-color: #605E5E;
+}
+
+.box-row2 {
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    justify-content: center;
+    place-items: center;
+}
+
+.box-row2 .footer-box {
+    background-color: #4BD1A0;
+}
+
+.footer-box .number {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.1rem;
+}
+
+.footer-box .figure-text {
+    font-size: 0.5rem;
+}
+
+@media screen and (min-width: 850px) {
+    .footer-box .number {
+        font-size: 1.8rem;
+    }
+
+    .footer-box .fa-dollar-sign, .box-row2 .fa-volume-up, .footer-box .fa-user-circle {
+        font-size: 2.5rem;
+    }
+
+    .footer-box .figure-text {
+        font-size: 0.8rem;
+    }
+
+    .footer-box {
+        width: 20%;
+    }
+}

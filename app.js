@@ -45,3 +45,18 @@ window.addEventListener("scroll", function () {
         backToTop.classList.remove("show-link")
     }
 });
+
+// Message input and send in footer
+const sendMessage = document.querySelector(".send-message");
+var message = document.getElementById("message-input");
+
+sendMessage.addEventListener("click", function (){
+    
+    // Check if the message meets the minimum character limit
+    if (message.length >= 30) {
+      // Code to handle sending the message
+      console.log("Sending message:", message);
+    } else {
+      alert("Message must be at least 30 characters long!");
+    }
+});
