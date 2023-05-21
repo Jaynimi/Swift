@@ -71,6 +71,8 @@ body {
     white-space: nowrap;
     font-size: 1.5rem;
     font-weight: 400;
+    text-align: center;
+    margin: 0 auto;
     text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
     animation: typing 3s steps(113),
         blink step-end 0.5s infinite alternate
@@ -162,9 +164,9 @@ hr {
     }
 }
 
-@keyframes typing {
-    from {
-        width: 0;
+@keyframes blink {
+    50% {
+        border-color: transparent;
     }
 }
 
