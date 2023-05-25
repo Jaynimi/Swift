@@ -14,15 +14,17 @@ html {
 body{
     box-sizing: border-box;
     background-color: #185c4317;
-    display: ;
     height: auto;
     font-family: "Open Sans", sans-serif;
     line-height: 1.5;
     font-size: 0.875rem;
 }
+a {
+    text-decoration: none;
+}
 
 /* hero */
-header {
+#home {
     min-height: 100vh;
     background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
       url(./homeHero.jpg) center/cover no-repeat;
@@ -136,9 +138,10 @@ ul {
     list-style-type: none;
 }
 
-a {
+.links-container a {
     text-decoration: none;
-    color: #d9edf7;
+    color: #ffff;
+    font-family: "Roboto", sans-serif;
 }
 
 .links {
@@ -743,7 +746,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding: 40px 0;
+    padding: 40px 8px;
 }
 
 .footer-text h1 {
@@ -761,9 +764,10 @@ footer {
     line-height: 2rem;
 }
 
-.footer-text li {
+.footer-text li, .footer-text a {
     color: white;
     font-size: 0.8rem;
+    text-decoration: none;
 }
 
 .copyright {
@@ -776,5 +780,99 @@ footer {
 @media screen and (min-width: 850px) {
     .footer-text {
         justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .footer-text li, .footer-text a {
+        font-size: 0.58rem;
+    }
+}
+
+
+/* About Us Page */
+#aboutPageHeader {
+    min-height: 100vh;
+    background: linear-gradient(#0f251d69, rgba(0, 0, 0, 0.37)),
+      url(./images/About\ us\ hero.jpg) center/cover no-repeat;
+}
+
+#about-title {
+    text-transform: uppercase;
+    font-size: 3rem;
+    color: #ffff;
+    letter-spacing: 1rem;
+    text-shadow: 2px 2px 2px #D16002;
+}
+
+.aboutPageContainer {
+    margin: 80px 5%;
+}
+
+.aboutPageContainer .brief-history {
+    margin-bottom: 60px;
+}
+
+.aboutPageContainer h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.6rem;
+    color: #34443C;
+    margin-bottom: 25px;
+}
+
+.aboutPageContainer p {
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+}
+
+.our-mission {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.our-mission img {
+    object-fit: cover;
+    width: 48%;
+    border-radius: 5px;
+    margin-left: 15px;
+}
+
+@media screen and (min-width: 850px) {
+    .aboutPageContainer .our-mission img {
+        width: 120%;
+        max-height: 250px;
+    }
+
+    #about-title {
+        font-size: 5rem;
+        letter-spacing: 2rem;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .our-mission {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .our-mission img {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .aboutPageContainer p {
+        font-size: 0.6rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #about-title {
+        font-size: 1.5rem;
+        letter-spacing: 1.5rem;
     }
 }
