@@ -17,6 +17,11 @@
     box-sizing: border-box;
     /* font-family: var(--Family) */
 }
+@media screen and (min-width: 850px) {
+    #nav a {
+        color: #4BD1A0;
+    }
+}
 
 body {
     overflow-x: hidden;
@@ -58,25 +63,44 @@ body {
     z-index: 2;
 }
 
-.text h1 {
+.contain h1 {
     font-size: 3rem;
     font-weight: 500;
     margin-bottom: 20px;
     text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    color: #fff;
 }
 
-.text p {
-    width: 113ch;
+@keyframes typing {
+    0% {
+        width: 0;
+      }
+    100% {
+        width: 100%;
+    }
+  }
+
+.text {
+    width: 90%;
     overflow: hidden;
     white-space: nowrap;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 400;
     text-align: center;
     margin: 0 auto;
     text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
-    animation: typing 3s steps(113),
-        blink step-end 0.5s infinite alternate
+    /* animation: typing 3s steps(113),
+        blink step-end 0.5s infinite alternate */
+    animation: typing 5s steps(40) infinite, pause 5s 1;
 }
+
+.text p {
+    display: inline-block;
+    white-space: pre;
+    text-overflow: wrap;
+}
+
 
 
 .subtext-sect {
@@ -158,11 +182,11 @@ hr {
     margin: 20px 0;
 }
 
-@keyframes typing {
+/* @keyframes typing {
     from {
         width: 0;
     }
-}
+} */
 
 @keyframes blink {
     50% {

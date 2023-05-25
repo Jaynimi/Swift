@@ -6,6 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Success Stories | SWIFT MFI</title>
+    <!-- Nav & Footer Styles -->
+    <link rel="stylesheet" href="../style.css">
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
     <link rel="stylesheet" href="success_stories.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,19 +23,53 @@
 </head>
 
 <body>
-    <header></header>
+        <!-- Navbar -->
+        <nav id="nav">
+            <div class="nav-center">
+                <!-- Nav header -->
+                <div class="nav-header">
+                    <h1 class="logo">Swift</h1>
+                    <button class="nav-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+                <!-- links -->
+                <div class="links-container">
+                    <ul class="links">
+                        <li>
+                          <a href="#about" class="scroll-link">About Us</a>
+                        </li>
+                        <li>
+                          <a href="#about" class="scroll-link">Management Team</a>
+                        </li>
+                        <li>
+                          <a href="./Success-Stories/success_stories.html" class="scroll-link">Success Stories</a>
+                        </li>
+                        <li>
+                          <a href="#projects" class="scroll-link">Events</a>
+                        </li>
+                        <li class="btn-or">
+                            <a href="" class="scroll-link btn-orange">donate</a>
+                        </li>
+                      </ul>
+                      
+                </div>
+            </div>
+        </nav>
     <main>
         <section class="hero">
             <div class="opacity"></div>
             <div class="container">
                 <div class="contain">
+                    <h1>OUR STORIES</h1>
                     <div class="text">
-                        <h1>OUR STORIES</h1>
-                        <p>Swift MFI is run by a team of students with a proven track record of increase in financial
-                            independence and growth</p>
+                        <p>A proven track record of financial independence and growth          </p>
                     </div>
+                    
                 </div>
+                
             </div>
+            
         </section>
         <section class="subtext-sect">
             <div class="sub-text">
@@ -37,7 +80,7 @@
             </div>
             <hr>
             <div class="stories">
-                <div class='story'>
+                <div class="story">
                     <img src="../images/rasha.webp" alt="Rasha">
                     <div>
                         <h2>01</h2>
@@ -51,7 +94,7 @@
                     </div>
                 </div>
                 <hr>
-                <div class='story'>
+                <div class="container">
                     <div>
                         <h2>02</h2>
                         <h2>Haneen, 28</h2>
@@ -66,7 +109,7 @@
 
                 </div>
                 <hr>
-                <div class='story'>
+                <div class="story">
                     <img src="../images/mehrona.webp" alt="Rasha">
                     <div>
                         <h2>03</h2>
@@ -80,7 +123,7 @@
                     </div>
                 </div>
                 <hr>
-                <div class='story'>
+                <div class="story">
                     <div>
                         <h2>04</h2>
                         <h2>Miliana, 59</h2>
@@ -95,7 +138,7 @@
 
                 </div>
                 <hr>
-                <div class='story'>
+                <div class="story">
                     <img src="../images/kuna.webp" alt="Rasha">
                     <div>
                         <h2>05</h2>
@@ -109,7 +152,7 @@
                     </div>
                 </div>
                 <hr>
-                <div class='story'>
+                <div class="story">
                     <div>
                         <h2>06</h2>
                         <h2>Valeria, 23</h2>
@@ -124,7 +167,7 @@
 
                 </div>
                 <hr>
-                <div class='story'>
+                <div class="story">
                     <img src="../images/rio.webp" alt="Rasha">
                     <div>
                         <h2>07</h2>
@@ -138,7 +181,7 @@
                     </div>
                 </div>
                 <hr>
-                <div class='story'>
+                <div class="story">
                     <div>
                         <h2>08</h2>
                         <h2>Samruai, 60</h2>
@@ -155,7 +198,104 @@
         </section>
     </main>
     <footer></footer>
-    <script src='./success-stories.js'></script>
+    
+    <script src="../app.js"></script>
+    <script src="./success-stories.js"></script>
+
+    <!-- Footer -->
+    <footer class="">
+        <div class="mail">
+            <div class="mail-container">
+                <h2>
+                    Get in touch
+                </h2>
+                <form>
+                    <textarea id="message-input" placeholder="Enter your email"></textarea>
+                    <button type="button" class="send-message">
+                        Send
+                    </button>
+                </form>
+            </div>    
+        </div>
+        <div class="footer-container">
+            <!-- Key figures -->
+            <div class="key-figures">
+                <h1 class="key-title">key figures</h1>
+                <div class="figures-boxes">
+                    <div class="boxes-row1">
+                        <div class="footer-box">
+                            <i class="fas fa-user-circle"></i>
+                            <p class="number">
+                                2700+
+                            </p>
+                            <p class="figure-text">
+                                life-changing loans
+                            </p>
+                        </div>
+                        <div class="footer-box">
+                            <i class="fas fa-dollar-sign"></i>
+                            <p class="number">
+                                170,000+
+                            </p>
+                            <p class="figure-text">
+                                max volume
+                            </p>
+                        </div>
+                    </div>
+                    <div class="box-row2">
+                        <div class="footer-box">
+                            <i class="fas fa-volume-up"></i>
+                            <p class="number">
+                                2700+
+                            </p>
+                            <p class="figure-text">
+                                events held
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="footer-text">
+                    <div class="contact-us">
+                        <h1>Contact Us</h1>
+                        <ul>
+                            <li><a href="">FAQs</a></li>
+                            <li><a href=""> communication@swift</a></li>
+                            <li><a href="">+ 1(248) 238 - 2916</a></li>
+                            <li><a href="">+ 968 9321 4074</a></li>
+                            <li><a href="">+ 91 91606 80690</a></li>
+                        </ul>
+                    </div>
+                    <div class="quick-links">
+                        <h1>quick links</h1>
+                        <ul>
+                            <li><a href="">About Us</a></li>
+                            <li><a href="">Support Us</a></li>
+                            <li><a href="">Events</a></li>
+                            <li><a href="">Our Team</a></li>
+                        </ul>
+                    </div>
+                    <div class="discover">
+                        <h1>Discover</h1>
+                        <ul>
+                            <li><a href="">About Us</a></li>
+                            <li><a href="">Statistics</a></li>
+                            <li><a href="">Events</a></li>
+                            <li><a href="">Media and Award</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="copyright">
+                    copyright &copy; <span id="date">
+                        <!-- Date inputed in app.js -->
+                    </span> by WebGo
+                </p>
+            </div>          
+
+        </div>
+    </footer>
+    <!-- End of Footer -->
 </body>
 
 </html>

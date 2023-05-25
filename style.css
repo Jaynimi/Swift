@@ -80,8 +80,8 @@ header {
     position: fixed;
     bottom: 3rem;
     right: 3rem;
-    color: #34443C;
-    background-color: #a0d2eb;
+    color: #D16002;
+    background-color: #4BD1A0;
     font-size: 1.5rem;
     padding: 8px 10px;
     border-radius: 10px;
@@ -735,5 +735,46 @@ footer {
 
     .footer-box {
         width: 20%;
+    }
+}
+
+/* Footer Test and Links */
+.footer-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 40px 0;
+}
+
+.footer-text h1 {
+    color: #4BD1A0;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.footer-text ul {
+    line-height: 1.8rem;
+}
+
+.footer-text .quick-links ul, .footer-text .discover ul {
+    line-height: 2rem;
+}
+
+.footer-text li {
+    color: white;
+    font-size: 0.8rem;
+}
+
+.copyright {
+    background-color: #4BD1A0;
+    text-align: center;
+    color: white;
+    padding: 5px;
+}
+
+@media screen and (min-width: 850px) {
+    .footer-text {
+        justify-content: space-around;
     }
 }
