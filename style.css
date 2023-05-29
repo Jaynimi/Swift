@@ -908,7 +908,7 @@ footer {
     position: relative;
     width: 40%;
     left: 30%;
-    height: 400px;
+    height: 500px;
     perspective: 1000px;
     overflow: hidden;
     border-radius: 50%;
@@ -934,11 +934,15 @@ footer {
 
 @media screen and (max-width: 650px) {
     #imageContainer {
+        width: 55%;
+        left: 22.5%;
         height: 300px;
     }
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 400px) {
     #imageContainer {
+        width: 70%;
+        left: 15%;
         height: 200px;
     }
 }
