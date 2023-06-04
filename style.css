@@ -11,7 +11,7 @@ html {
     scroll-behavior: smooth;
 }
 
-body{
+body {
     box-sizing: border-box;
     background-color: #185c4317;
     height: auto;
@@ -19,6 +19,7 @@ body{
     line-height: 1.5;
     font-size: 0.875rem;
 }
+
 a {
     text-decoration: none;
 }
@@ -27,7 +28,7 @@ a {
 #home {
     min-height: 100vh;
     background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-      url(./homeHero.jpg) center/cover no-repeat;
+        url(./homeHero.jpg) center/cover no-repeat;
 }
 
 .banner {
@@ -100,15 +101,17 @@ a {
 
 @keyframes bounce {
     0% {
-      transform: scale(1.2);
+        transform: scale(1.2);
     }
+
     50% {
-      transform: scale(0.8);
+        transform: scale(0.8);
     }
+
     100% {
-      transform: scale(1.2);
+        transform: scale(1.2);
     }
-  }
+}
 
 
 /* Nav Styling Beginning */
@@ -224,7 +227,7 @@ ul {
         cursor: pointer;
     }
 
-    .show-links{
+    .show-links {
         height: 17rem;
         transition: all 0.3s linear;
     }
@@ -286,6 +289,7 @@ ul {
 .fixed-nav a {
     color: #34443C;
 }
+
 /* End of Nav Styling 13-141 */
 
 
@@ -328,6 +332,7 @@ ul {
 #whatWeDo {
     margin-bottom: 40px;
 }
+
 .section {
     margin: 0 5%;
 }
@@ -502,10 +507,11 @@ ul {
     #services {
         height: auto;
     }
+
     .services-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
     .service {
@@ -602,9 +608,9 @@ footer p {
 } */
 
 /* Footer */
-footer {
-    /* padding: auto 5%; */
-}
+/* footer {
+    padding: auto 5%; 
+}*/
 
 /* Get In Touch Section */
 .mail {
@@ -613,10 +619,10 @@ footer {
     display: flex;
     /* align-items: center; */
     justify-content: center;
-    
+
 }
 
-.mail-container{
+.mail-container {
     margin: auto 50px;
     display: flex;
     align-items: center;
@@ -634,23 +640,22 @@ footer {
     display: flex;
     flex-direction: row;
     width: 60%;
-    
-    
+
+
 }
 
 #message-input {
     height: 35px;
-    resize: none;
     width: 100%;
     border: transparent;
     background-color: #eaf0ee;
-    padding: 10px;
+    padding: 3% 10px;
 }
 
 .send-message {
     border: transparent;
     background-color: #34443C;
-    padding: 0 10px;
+    padding: 10px;
     color: white;
 }
 
@@ -658,6 +663,7 @@ footer {
 .footer-container {
     background-color: #34443C;
 }
+
 .key-title {
     text-align: center;
     text-transform: uppercase;
@@ -691,10 +697,11 @@ footer {
 }
 
 .footer-box .fa-user-circle {
-    color:  #4BD1A0;
+    color: #4BD1A0;
 }
 
-.footer-box .fa-dollar-sign, .box-row2 .fa-volume-up {
+.footer-box .fa-dollar-sign,
+.box-row2 .fa-volume-up {
     color: black;
 }
 
@@ -721,6 +728,8 @@ footer {
 
 .footer-box .figure-text {
     font-size: 0.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
 }
 
 @media screen and (min-width: 850px) {
@@ -728,7 +737,9 @@ footer {
         font-size: 1.8rem;
     }
 
-    .footer-box .fa-dollar-sign, .box-row2 .fa-volume-up, .footer-box .fa-user-circle {
+    .footer-box .fa-dollar-sign,
+    .box-row2 .fa-volume-up,
+    .footer-box .fa-user-circle {
         font-size: 2.5rem;
     }
 
@@ -760,11 +771,13 @@ footer {
     line-height: 1.8rem;
 }
 
-.footer-text .quick-links ul, .footer-text .discover ul {
+.footer-text .quick-links ul,
+.footer-text .discover ul {
     line-height: 2rem;
 }
 
-.footer-text li, .footer-text a {
+.footer-text li,
+.footer-text a {
     color: white;
     font-size: 0.8rem;
     text-decoration: none;
@@ -784,7 +797,9 @@ footer {
 }
 
 @media screen and (max-width: 550px) {
-    .footer-text li, .footer-text a {
+
+    .footer-text li,
+    .footer-text a {
         font-size: 0.58rem;
     }
 }
@@ -794,7 +809,7 @@ footer {
 #aboutPageHeader {
     min-height: 100vh;
     background: linear-gradient(#0f251d69, rgba(0, 0, 0, 0.37)),
-      url(./images/About\ us\ hero.jpg) center/cover no-repeat;
+        url(./images/About\ us\ hero.jpg) center/cover no-repeat;
 }
 
 #about-title {

@@ -9,14 +9,14 @@ navToggle.addEventListener("click", function () {
     const containerHeight = linksContainer.getBoundingClientRect().height;
     const linksHeight = links.getBoundingClientRect().height;
 
-    if(containerHeight === 0) {
+    if (containerHeight === 0) {
         linksContainer.style.height = `${linksHeight + 50}px`
     } else {
         linksContainer.style.height = 0;
     }
 
     console.log()
-    
+
 });
 
 // Fixed Navbar on scroll and Back-to-top button
@@ -28,7 +28,7 @@ window.addEventListener("scroll", function () {
     const navHeight = navbar.getBoundingClientRect().height;
 
     // fixed navbar
-    if(scrollHeight > navHeight) {
+    if (scrollHeight > navHeight) {
         navbar.classList.add("fixed-nav");
     } else {
         navbar.classList.remove("fixed-nav");
