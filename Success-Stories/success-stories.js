@@ -2,6 +2,10 @@
 const navToggle = document.querySelector(".nav-toggle");
 const linksContainer = document.querySelector(".links-container")
 const links = document.querySelector(".links");
+const messageInput = document.getElementById('message-input').value;
+const submitButton = document.getElementById('error-message');
+const errorMessage = document.getElementById('error-message');
+const form = document.querySelector('form');
 
 navToggle.addEventListener("click", function () {
     // Found the actual lenght of the ul with class of links instead of manually calculating and inputting it
@@ -39,5 +43,14 @@ window.addEventListener("scroll", function () {
         backToTop.classList.add("show-link");
     } else {
         backToTop.classList.remove("show-link")
+    }
+});
+
+form.addEventListener('submit', function (event) {
+    if (!messageInput.validity.valid) {
+        event.preventDefault();
+        errorMessage.style.display = 'block';
+    } else {
+        alert("Thank you. We'll get back to you soon")
     }
 });

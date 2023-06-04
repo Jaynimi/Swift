@@ -17,6 +17,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Nunito&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
@@ -79,7 +80,7 @@
             </div>
             <hr>
             <div class="stories">
-                <div class="story">
+                <div class="story rasha animate__animated animate__backInRight">
                     <img src="../images/rasha.webp" alt="Rasha">
                     <div>
                         <h2>01</h2>
@@ -93,7 +94,7 @@
                     </div>
                 </div>
                 <hr>
-                <div class="container">
+                <div class="story haneen animate__animated animate__backInLeft">
                     <div>
                         <h2>02</h2>
                         <h2>Haneen, 28</h2>
@@ -108,7 +109,7 @@
 
                 </div>
                 <hr>
-                <div class="story">
+                <div class="story mehrona animate__animated animate__backInRight">
                     <img src="../images/mehrona.webp" alt="Rasha">
                     <div>
                         <h2>03</h2>
@@ -122,7 +123,7 @@
                     </div>
                 </div>
                 <hr>
-                <div class="story">
+                <div class="story miliana animate__animated animate__backInLeft">
                     <div>
                         <h2>04</h2>
                         <h2>Miliana, 59</h2>
@@ -137,7 +138,7 @@
 
                 </div>
                 <hr>
-                <div class="story">
+                <div class="story kuna animate__animated animate__backInRight">
                     <img src="../images/kuna.webp" alt="Rasha">
                     <div>
                         <h2>05</h2>
@@ -151,7 +152,7 @@
                     </div>
                 </div>
                 <hr>
-                <div class="story">
+                <div class="story valeria animate__animated animate__backInLeft">
                     <div>
                         <h2>06</h2>
                         <h2>Valeria, 23</h2>
@@ -166,7 +167,7 @@
 
                 </div>
                 <hr>
-                <div class="story">
+                <div class="story rio animate__animated animate__backInRight">
                     <img src="../images/rio.webp" alt="Rasha">
                     <div>
                         <h2>07</h2>
@@ -180,7 +181,7 @@
                     </div>
                 </div>
                 <hr>
-                <div class="story">
+                <div class="story samruai animate__animated animate__backInLeft">
                     <div>
                         <h2>08</h2>
                         <h2>Samruai, 60</h2>
@@ -208,12 +209,12 @@
                 <h2>
                     Get in touch
                 </h2>
-                <form>
-                    <textarea id="message-input" placeholder="Enter your email"></textarea>
-                    <button type="button" class="send-message">
-                        Send
-                    </button>
+                <form target="_blank" action="https://formsubmit.co/andaline160@gmail.com" method="POST">
+                    <input type="email" name="email" id="message-input" placeholder="Enter your email" required
+                        pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
+                    <button type="submit" class="send-message">Send</button>
                 </form>
+                <div id="error-message" style="display: none; color: red;">Please enter a valid email address.</div>
             </div>
         </div>
         <div class="footer-container">
