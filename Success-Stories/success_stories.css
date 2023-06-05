@@ -17,9 +17,11 @@
     box-sizing: border-box;
     /* font-family: var(--Family) */
 }
+
 @media screen and (min-width: 850px) {
     #nav a {
-        color: #4BD1A0;
+        color: #000;
+        font-weight: 500;
     }
 }
 
@@ -75,11 +77,12 @@ body {
 @keyframes typing {
     0% {
         width: 0;
-      }
+    }
+
     100% {
         width: 100%;
     }
-  }
+}
 
 .text {
     width: 90%;
@@ -213,9 +216,24 @@ hr {
         grid-template-columns: 1fr;
     }
 
+    .rasha,
+    .mehrona,
+    .kuna,
+    .rio {
+        flex-direction: column-reverse;
+    }
+
+    .haneen,
+    .miliana,
+    .valeria,
+    .samruai {
+        flex-direction: column;
+    }
+
+
+
     .story img {
-        width: 150px;
-        height: 150px;
+        width: 100%;
         margin-right: 10px;
     }
 
