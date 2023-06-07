@@ -969,6 +969,59 @@ footer p {
 #managementHeader {
     min-height: 100vh;
     background: linear-gradient(#0f251d69, rgba(0, 0, 0, 0.37)),
-      url(./images/events\ Banner.webp) center/cover no-repeat;
+      url(./images/managementPageBanner.jpg) center/cover no-repeat;
     background-attachment: fixed;
+}
+
+.managementContainer {
+    margin: 90px 5%;
+}
+
+#management-title {
+    text-transform: uppercase;
+    font-size: 3rem;
+    color: #ffff;
+    letter-spacing: 1rem;
+    text-shadow: 2px 2px 2px #D16002;
+}
+
+.managementText h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-bottom: 25px;
+    font-family: "Roboto", sans-serif;
+    color: #34443C;
+}
+
+.managementText p {
+    margin-bottom: 15px;
+    line-height: 2rem;
+    word-spacing: 0.3rem;
+    letter-spacing: 0.065rem;
+}
+
+.managementImgs {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    margin-top: 50px;
+}
+
+.managementImgs .person {
+    margin: 25px 0;
+}
+
+@media screen and (min-width: 850px) {
+    #management-title {
+        font-size: 4.5rem;
+        letter-spacing: 2rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #management-title {
+        font-size: 1.5rem;
+        letter-spacing: 1.5rem;
+    }
 }
